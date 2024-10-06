@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Azerbaijan Flag</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .azeFlag {
+            width: 750px;
+            height: 125px;
+            background: #e00034;
+            margin: 0 auto;
+            border-top: 125px solid #0097c3;
+            border-bottom: 125px solid #00ae65;
+            position: relative;
+        }
+
+        .crescent {
+            width: 100px;
+            height: 100px;
+            border-radius: 100%;
+            background: #e00034;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            box-shadow: -10px 0 0 7px #fff;
+        }
+
+        #star {
+            background: 0 0;
+            width: 39px;
+            height: 0;
+            position: absolute;
+            top: 50px;
+            left: 400px;
+            border-top: solid 15px #fff;
+            border-bottom: solid 15px #fff;
+            border-left: solid 15px transparent;
+            border-right: solid 15px transparent;
+            transform: rotate(70deg); 
+        }
+
+        #star:before {
+            content: ""; 
+            background: 0 0; 
+            width: 39px; 
+            height: 0; 
+            position: absolute;
+            top: -15px; 
+            left: -15px; 
+            border-top: solid 15px #fff; 
+            border-bottom: solid 15px #fff; 
+            border-left: solid 15px transparent; 
+            border-right: solid 15px transparent; 
+            transform: rotate(90deg); 
+        }
+    </style>
+</head>
+<body>
+    <div class="azeFlag">
+        <div class="crescent"></div>
+        <div id="star"></div>
+    </div>
+</body>
+</html>
